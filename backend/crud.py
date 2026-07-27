@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from backend.models import Task
+from models import Task
 
 def get_tasks(db:Session):
     return db.query(Task).all()
