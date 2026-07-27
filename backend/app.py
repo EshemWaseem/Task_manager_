@@ -17,7 +17,7 @@ origins = [
     "http://localhost:3000",
     "http://localhost:5500",
     "http://127.0.0.1:5500",
-    "https://task-manager-seven-steel.vercel.app"
+    "https://task-manager-1a8h-kv18eioxd-eshem-waseem.vercel.app/"
 ]
 
 app.add_middleware(
