@@ -12,12 +12,27 @@ Base.metadata.create_all(bind=engine)
 # Create FastAPI app
 app = FastAPI()
 
-# CORS
+# # CORS
+# origins = [
+#     "http://localhost:3000",
+#     "http://localhost:5500",
+#     "http://127.0.0.1:5500",
+#     "https://task-manager-1a8h-kv18eioxd-eshem-waseem.vercel.app"
+# ]
+
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=origins,
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
+
 origins = [
     "http://localhost:3000",
     "http://localhost:5500",
     "http://127.0.0.1:5500",
-    "https://task-manager-1a8h-kv18eioxd-eshem-waseem.vercel.app"
+    "https://task-manager-eshem-waseem.vercel.app",
 ]
 
 app.add_middleware(
